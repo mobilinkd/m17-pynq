@@ -1,0 +1,599 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Sat Aug 14 21:08:11 2021
+| Host         : emerald running 64-bit Fedora release 33 (Thirty Three)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 112
++-----------+----------+------------------------+------------+
+| Rule      | Severity | Description            | Violations |
++-----------+----------+------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining       | 58         |
+| DPOP-1    | Warning  | PREG Output pipelining | 26         |
+| DPOP-2    | Warning  | MREG Output pipelining | 26         |
+| REQP-1580 | Warning  | Phase alignment        | 2          |
++-----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__3 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__3 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__4 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__4 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#55 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#56 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#57 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#58 Warning
+Input pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3 input design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__1 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__2 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__3 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__1 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__2 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__1 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__1 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__4 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#25 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#26 Warning
+PREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3 output design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__1 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__2 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__3 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/decimal__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__1 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__2 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__1 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__1__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__1 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__2__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__3__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__4 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/p_0_out__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#25 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#26 Warning
+MREG Output pipelining  
+DSP design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3 multiplier stage design_1_i/pll/inst/CLK_CORE_DRP_I/pll_drp_inst/sel00__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1580#1 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 design_1_i/selectio_wiz_0/inst/pins[0].oserdese2_master. This can result in corrupted data. The design_1_i/selectio_wiz_0/inst/pins[0].oserdese2_master/CLK / design_1_i/selectio_wiz_0/inst/pins[0].oserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#2 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 design_1_i/selectio_wiz_1/inst/pins[0].oserdese2_master. This can result in corrupted data. The design_1_i/selectio_wiz_1/inst/pins[0].oserdese2_master/CLK / design_1_i/selectio_wiz_1/inst/pins[0].oserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+

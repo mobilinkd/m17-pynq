@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Aug 15 11:10:28 2021
+# Process ID: 178978
+# Current directory: /home/rob/m17-pynq/Vivado/acg/acg.runs/design_1_clk_wiz_0_1_synth_1
+# Command line: vivado -log design_1_clk_wiz_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_clk_wiz_0_1.tcl
+# Log file: /home/rob/m17-pynq/Vivado/acg/acg.runs/design_1_clk_wiz_0_1_synth_1/design_1_clk_wiz_0_1.vds
+# Journal file: /home/rob/m17-pynq/Vivado/acg/acg.runs/design_1_clk_wiz_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_clk_wiz_0_1.tcl -notrace
