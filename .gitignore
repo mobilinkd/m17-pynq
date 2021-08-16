@@ -112,16 +112,10 @@
 # Misc files
 #########
 !LICENSE
-HLS/.vivado_hls_log_all.xml
-HLS/acg/arbitrary_clock_gen_1/.autopilot/
-HLS/acg/arbitrary_clock_gen_1/impl/
-HLS/acg/arbitrary_clock_gen_1/sim/
-HLS/acg/arbitrary_clock_gen_1/syn/
 Vivado/acg.bit
 Vivado/acg.hwh
 Vivado/acg.tcl
 Vivado/acg/acg.cache/
 Vivado/acg/acg.gen/
-Vivado/acg/acg.ip_user_files/
 Vivado/acg/acg.runs/
 

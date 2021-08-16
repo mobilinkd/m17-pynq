@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jul 21 11:55:03 2019
+# Process ID: 23106
+# Current directory: /home/rob/acg-pynq/HLS/arbitrary_clock_gen_1/sim/verilog
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/rob/acg-pynq/HLS/arbitrary_clock_gen_1/sim/verilog/vivado.log
+# Journal file: /home/rob/acg-pynq/HLS/arbitrary_clock_gen_1/sim/verilog/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config /home/rob/acg-pynq/HLS/arbitrary_clock_gen_1/sim/verilog/acg_top.wcfg
+close_sim

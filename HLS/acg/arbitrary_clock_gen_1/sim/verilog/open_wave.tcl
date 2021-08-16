@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database acg_top.wdb

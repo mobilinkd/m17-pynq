@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vivado HLS Report for 'acg_top'
+================================================================
+* Date:           Sun Jul 21 12:31:55 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        HLS
+* Solution:       arbitrary_clock_gen_1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.371|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    412|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|      -|      68|    104|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|      33|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     101|    516|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+------------------------+---------+-------+----+-----+
+    |         Instance         |         Module         | BRAM_18K| DSP48E| FF | LUT |
+    +--------------------------+------------------------+---------+-------+----+-----+
+    |acg_top_AXILiteS_s_axi_U  |acg_top_AXILiteS_s_axi  |        0|      0|  68|  104|
+    +--------------------------+------------------------+---------+-------+----+-----+
+    |Total                     |                        |        0|      0|  68|  104|
+    +--------------------------+------------------------+---------+-------+----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |p_Val2_1_fu_126_p2  |     +    |      0|  0|  32|          32|          32|
+    |p_Val2_2_fu_120_p2  |     +    |      0|  0|  32|          32|          32|
+    |p_Val2_3_fu_78_p2   |     +    |      0|  0|  39|          32|          32|
+    |p_Val2_4_fu_108_p2  |     +    |      0|  0|  32|          32|          32|
+    |p_Val2_5_fu_90_p2   |     +    |      0|  0|  32|          32|          32|
+    |p_Val2_6_fu_96_p2   |     +    |      0|  0|  39|          32|          32|
+    |p_Val2_7_fu_72_p2   |     +    |      0|  0|  39|          32|          32|
+    |p_Val2_s_fu_132_p2  |     +    |      0|  0|  39|          32|          32|
+    |tmp1_fu_102_p2      |     +    |      0|  0|  32|          32|          32|
+    |tmp2_fu_114_p2      |     +    |      0|  0|  32|          32|          32|
+    |tmp_fu_84_p2        |     +    |      0|  0|  32|          32|          32|
+    |tmp_7_fu_62_p2      |     -    |      0|  0|  32|          32|          32|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0| 412|         384|         384|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-----------------+----+----+-----+-----------+
+    |       Name      | FF | LUT| Bits| Const Bits|
+    +-----------------+----+----+-----+-----------+
+    |accumulator_V_0  |  32|   0|   32|          0|
+    |ap_CS_fsm        |   1|   0|    1|          0|
+    +-----------------+----+----+-----+-----------+
+    |Total            |  33|   0|   33|          0|
+    +-----------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+--------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|   Protocol   | Source Object|    C Type    |
++------------------------+-----+-----+--------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    5|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    5|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|     s_axi    |   AXILiteS   |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_none |    acg_top   | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_none |    acg_top   | return value |
+|ap_return               | out |    8| ap_ctrl_none |    acg_top   | return value |
++------------------------+-----+-----+--------------+--------------+--------------+
+

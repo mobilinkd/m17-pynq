@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;HLS/acg_top.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from HLS/acg_top.cpp:1:
+In file included from HLS/acg_top.cpp:4:
+In file included from HLS/acg_top.hpp:6:
+In file included from /data/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h:341:
+/data/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int_special.h:89:1: warning: &apos;complex&apos; defined as a struct template here but previously declared as a class template [-Wmismatched-tags]
+struct complex&lt;ap_int&lt;_AP_W&gt; &gt; {
+^
+/data/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int_special.h:61:24: note: did you mean struct here?
+template&lt;typename _Tp&gt; class complex;
+                       ^~~~~
+                       struct
+In file included from HLS/acg_top.cpp:1:
+In file included from HLS/acg_top.cpp:4:
+In file included from HLS/acg_top.hpp:6:
+In file included from /data/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h:349:
+In file included from /data/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_fixed.h:380:
+/data/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_fixed_special.h:89:1: warning: &apos;complex&apos; defined as a struct template here but previously declared as a class template [-Wmismatched-tags]
+struct complex&lt;ap_fixed&lt;_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N&gt; &gt; {
+^
+/data/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_fixed_special.h:61:24: note: did you mean struct here?
+template&lt;typename _Tp&gt; class complex;
+                       ^~~~~
+                       struct
+/data/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int_special.h:61:24: note: did you mean struct here?
+template&lt;typename _Tp&gt; class complex;
+                       ^~~~~
+                       struct
+2 warnings generated."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 513.414 ; gain = 2.027 ; free physical = 1460 ; free virtual = 12652"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 513.414 ; gain = 2.027 ; free physical = 1460 ; free virtual = 12652"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 513.414 ; gain = 2.027 ; free physical = 1455 ; free virtual = 12648"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 513.414 ; gain = 2.027 ; free physical = 1454 ; free virtual = 12646"/>
+	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_120" tag="" content="Partitioning array &apos;accumulator.V&apos; automatically."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 641.113 ; gain = 129.727 ; free physical = 1433 ; free virtual = 12626"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 641.113 ; gain = 129.727 ; free physical = 1441 ; free virtual = 12633"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;acg_top&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;acg_top&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 10.12 seconds; current allocated memory: 69.625 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.01 seconds; current allocated memory: 69.771 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;acg_top&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;acg_top/inc_V&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;acg_top&apos; to &apos;ap_ctrl_none&apos;."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;accumulator_V_0&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;inc_V&apos; to AXI-Lite port AXILiteS."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;acg_top&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.02 seconds; current allocated memory: 70.163 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 641.113 ; gain = 129.727 ; free physical = 1432 ; free virtual = 12626"/>
+	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for acg_top."/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for acg_top."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for acg_top."/>
+	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 10.54 seconds; peak allocated memory: 70.163 MB."/>
+</Messages>

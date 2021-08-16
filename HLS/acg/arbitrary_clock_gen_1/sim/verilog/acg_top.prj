@@ -1,0 +1,6 @@
+sv work "glbl.v"
+sv xil_defaultlib "acg_top.v"
+sv xil_defaultlib "acg_top.autotb.v"
+sv xil_defaultlib "AESL_axi_slave_AXILiteS.v"
+sv xil_defaultlib "acg_top_AXILiteS_s_axi.v"
+
