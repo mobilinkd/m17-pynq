@@ -3,15 +3,19 @@
 
 #include "acg_top.hpp"
 
-output_type acg_top(delay_type inc)
+output_type acg_top(delay_type new_inc, bool valid)
 {
-#pragma HLS INTERFACE s_axilite port=inc
+#pragma HLS INTERFACE ap_none port=new_inc
+#pragma HLS INTERFACE ap_none port=valid
 #pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS latency max=0
 
+	static delay_type inc = 0;
 	static ap_uint<DIVIDER> accumulator[UPSAMPLE];
 	ap_uint<DIVIDER> delay[UPSAMPLE];
 	output_type clock_out;
+
+	if (valid) inc = new_inc;
 
 	delay[0] = inc;
 	delay[1] = inc << 1;

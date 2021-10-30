@@ -1,20 +1,20 @@
 ############################################################
-## This file is generated automatically by Vivado HLS.
+## This file is generated automatically by Vitis HLS.
 ## Please DO NOT edit it.
-## Copyright (C) 1986-2019 Xilinx, Inc. All Rights Reserved.
+## Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ############################################################
-open_project HLS
+open_project acg
 set_top acg_top
-add_files HLS/acg_top.hpp
-add_files HLS/acg_top.cpp -cflags "-Wall -std=c++11"
-add_files -tb HLS/acg_test.cpp -cflags "-std=c++11 -Wall -Wno-unknown-pragmas"
-open_solution "arbitrary_clock_gen_1"
-set_part {xc7z020clg400-1} -tool vivado
+add_files acg/acg_top.cpp
+add_files acg_top.hpp
+add_files -tb acg/acg_test.cpp -cflags "-std=c++11 -Wall -Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+open_solution "arbitrary_clock_gen_1" -flow_target vivado
+set_part {xc7z020-clg400-1}
 create_clock -period 10 -name default
-config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0
-config_export -description {Arbitrary Clock Generator} -display_name {Mobilinkd Arbitrary Clock Generator} -format ip_catalog -library acg -rtl verilog -vendor Mobilinkd -vivado_phys_opt place -vivado_report_level 0
-#source "./HLS/arbitrary_clock_gen_1/directives.tcl"
+config_export -description {Arbitrary Clock Generator} -display_name {Mobilinkd Arbitrary Clock Generator} -library acg -output /home/rob/m17-pynq/HLS/acg_top.zip -vendor Mobilinkd -version 2.0 -vivado_clock 10 -vivado_phys_opt place -vivado_report_level 0
+config_rtl -reset all
+source "./acg/arbitrary_clock_gen_1/directives.tcl"
 csim_design -clean
 csynth_design
 cosim_design -O -trace_level port
-export_design -flow syn -rtl verilog -format ip_catalog -description "Arbitrary Clock Generator" -vendor "Mobilinkd" -library "acg" -display_name "Mobilinkd Arbitrary Clock Generator"
+export_design -rtl verilog -format ip_catalog -description "Arbitrary Clock Generator" -vendor "Mobilinkd" -library "acg" -version "2.0" -display_name "Mobilinkd Arbitrary Clock Generator" -output /home/rob/m17-pynq/HLS/acg_top.zip

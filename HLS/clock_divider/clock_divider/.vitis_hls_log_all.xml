@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'clock_div_top/clk_in' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="clock_divider" solutionName="solution1" date="2021-09-11T19:40:24.727-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'clk' is power-on initialization." projectName="clock_divider" solutionName="solution1" date="2021-09-11T19:40:24.719-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'counter' is power-on initialization." projectName="clock_divider" solutionName="solution1" date="2021-09-11T19:40:24.712-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'clk_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="clock_divider" solutionName="solution1" date="2021-09-11T19:40:24.709-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5301] unused parameter 'print': /data/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16" projectName="clock_divider" solutionName="solution1" date="2021-09-11T19:40:21.354-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -4,6 +4,7 @@
 #pragma once
 
 #include <ap_int.h>
+#include <cstddef>
 
 constexpr size_t DIVIDER=32;
 constexpr size_t UPSAMPLE=8;
