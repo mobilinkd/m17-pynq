@@ -39,25 +39,33 @@ set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33 } [get_ports { pll_lo
 
 ##PmodA
 
-#set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 SLEW FAST DRIVE 16} [get_ports { synth_clk[0] }]; #IO_L17P_T2_34 Sch=ja_p[1]
-set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { baseband[0] }]; #IO_L17N_T2_34 Sch=ja_n[1]
-set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { rx_i }]; #IO_L7P_T1_34 Sch=ja_p[2]
-set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { rx_q }]; #IO_L7N_T1_34 Sch=ja_n[2]
+set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVDS_25 } [get_ports { rf_i_p }]; #IO_L17P_T2_34 Sch=ja_p[1]
+set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVDS_25 } [get_ports { rf_i_n }]; #IO_L17N_T2_34 Sch=ja_n[1]
+set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVDS_25 } [get_ports { rf_q_p }]; #IO_L7P_T1_34 Sch=ja_p[2]
+set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVDS_25 } [get_ports { rf_q_n }]; #IO_L7N_T1_34 Sch=ja_n[2]
+#set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 } [get_ports { synth_clk[0] }]; #IO_L17P_T2_34 Sch=ja_p[1]
+#set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { demod }]; #IO_L17N_T2_34 Sch=ja_n[1]
+#set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { rx_i }]; #IO_L7P_T1_34 Sch=ja_p[2]
+#set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { rx_q }]; #IO_L7N_T1_34 Sch=ja_n[2]
 #set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports { pll_in }]; #IO_L12P_T1_MRCC_34 Sch=ja_p[3]
-#set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 } [get_ports { ja[5] }]; #IO_L12N_T1_MRCC_34 Sch=ja_n[3]
+#set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 } [get_ports { synth_clk[0] }]; #IO_L12N_T1_MRCC_34 Sch=ja_n[3]
 #set_property -dict { PACKAGE_PIN W18   IOSTANDARD LVCMOS33 } [get_ports { ja[6] }]; #IO_L22P_T3_34 Sch=ja_p[4]
 #set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports { ja[7] }]; #IO_L22N_T3_34 Sch=ja_n[4]
 
 ##PmodB
 
-#set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS33 } [get_ports { jb[0] }]; #IO_L8P_T1_34 Sch=jb_p[1]
-#set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { jb[1] }]; #IO_L8N_T1_34 Sch=jb_n[1]
-#set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } [get_ports { jb[2] }]; #IO_L1P_T0_34 Sch=jb_p[2]
-#set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33 } [get_ports { jb[3] }]; #IO_L1N_T0_34 Sch=jb_n[2]
+set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS33 } [get_ports { dac_1 }]; #IO_L8P_T1_34 Sch=jb_p[1]
+set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { demod }]; #IO_L8N_T1_34 Sch=jb_n[1]
+set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } [get_ports { rx_i }]; #IO_L1P_T0_34 Sch=jb_p[2]
+set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33 } [get_ports { rx_q }]; #IO_L1N_T0_34 Sch=jb_n[2]
+#set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVDS_25 } [get_ports { rf_i_p }]; #IO_L8P_T1_34 Sch=jb_p[1]
+#set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVDS_25 } [get_ports { rf_i_n }]; #IO_L8N_T1_34 Sch=jb_n[1]
+#set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVDS_25 } [get_ports { rf_q_p }]; #IO_L1P_T0_34 Sch=jb_p[2]
+#set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVDS_25 } [get_ports { rf_q_n }]; #IO_L1N_T0_34 Sch=jb_n[2]
 #set_property -dict { PACKAGE_PIN V16   IOSTANDARD LVCMOS33 } [get_ports { jb[4] }]; #IO_L18P_T2_34 Sch=jb_p[3]
 #set_property -dict { PACKAGE_PIN W16   IOSTANDARD LVCMOS33 } [get_ports { jb[5] }]; #IO_L18N_T2_34 Sch=jb_n[3]
-#set_property -dict { PACKAGE_PIN V12   IOSTANDARD LVCMOS33 } [get_ports { jb[6] }]; #IO_L4P_T0_34 Sch=jb_p[4]
-#set_property -dict { PACKAGE_PIN W13   IOSTANDARD LVCMOS33 } [get_ports { jb[7] }]; #IO_L4N_T0_34 Sch=jb_n[4]
+#set_property -dict { PACKAGE_PIN V12   IOSTANDARD LVDS_25 } [get_ports { rf_i_p }]; #IO_L4P_T0_34 Sch=jb_p[4]
+#set_property -dict { PACKAGE_PIN W13   IOSTANDARD LVDS_25 } [get_ports { rf_i_n }]; #IO_L4N_T0_34 Sch=jb_n[4]
 
 ##Audio 
 
@@ -177,17 +185,17 @@ set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { rx_q }
 
 set_property -dict { PACKAGE_PIN P19   IOSTANDARD LVCMOS33 } [get_ports { synth_clk[0] }]; #IO_L13N_T2_MRCC_34 Sch=hdmi_rx_clk_n
 set_property -dict { PACKAGE_PIN N18   IOSTANDARD LVCMOS33 } [get_ports { pll_in }]; #IO_L13P_T2_MRCC_34 Sch=hdmi_rx_clk_p
-set_property -dict { PACKAGE_PIN U20   IOSTANDARD TMDS_33 } [get_ports { rf_out_n[0] }]; #IO_L15N_T2_DQS_34 Sch=hdmi_rx_d_n[1]
-set_property -dict { PACKAGE_PIN T20   IOSTANDARD TMDS_33 } [get_ports { rf_out_p[0] }]; #IO_L15P_T2_DQS_34 Sch=hdmi_rx_d_p[1]
+#set_property -dict { PACKAGE_PIN U20   IOSTANDARD TMDS_33 } [get_ports { rf_n }]; #IO_L15N_T2_DQS_34 Sch=hdmi_rx_d_n[1]
+#set_property -dict { PACKAGE_PIN T20   IOSTANDARD TMDS_33 } [get_ports { rf_p }]; #IO_L15P_T2_DQS_34 Sch=hdmi_rx_d_p[1]
 #set_property -dict { PACKAGE_PIN W20   IOSTANDARD TMDS_33 } [get_ports { CLK_OUT_D3_0_clk_n[0] }]; #IO_L16N_T2_34 Sch=hdmi_rx_d_n[0]
 #set_property -dict { PACKAGE_PIN V20   IOSTANDARD TMDS_33 } [get_ports { CLK_OUT_D3_0_clk_p[0] }]; #IO_L16P_T2_34 Sch=hdmi_rx_d_p[0]
 #set_property -dict { PACKAGE_PIN P20   IOSTANDARD TMDS_33 } [get_ports { CLK_OUT_D3_1_clk_n[0] }]; #IO_L14N_T2_SRCC_34 Sch=hdmi_rx_d_n[2]
 #set_property -dict { PACKAGE_PIN N20   IOSTANDARD TMDS_33 } [get_ports { CLK_OUT_D3_1_clk_p[0] }]; #IO_L14P_T2_SRCC_34 Sch=hdmi_rx_d_p[2]
 
-set_property -dict { PACKAGE_PIN W20   IOSTANDARD TMDS_33 } [get_ports { rf_i_n }]; #IO_L16N_T2_34 Sch=hdmi_rx_d_n[0]
-set_property -dict { PACKAGE_PIN V20   IOSTANDARD TMDS_33 } [get_ports { rf_i_p }]; #IO_L16P_T2_34 Sch=hdmi_rx_d_p[0]
-set_property -dict { PACKAGE_PIN P20   IOSTANDARD TMDS_33 } [get_ports { rf_q_n }]; #IO_L14N_T2_SRCC_34 Sch=hdmi_rx_d_n[2]
-set_property -dict { PACKAGE_PIN N20   IOSTANDARD TMDS_33 } [get_ports { rf_q_p }]; #IO_L14P_T2_SRCC_34 Sch=hdmi_rx_d_p[2]
+#set_property -dict { PACKAGE_PIN W20   IOSTANDARD TMDS_33 } [get_ports { rf_i_n }]; #IO_L16N_T2_34 Sch=hdmi_rx_d_n[0]
+#set_property -dict { PACKAGE_PIN V20   IOSTANDARD TMDS_33 } [get_ports { rf_i_p }]; #IO_L16P_T2_34 Sch=hdmi_rx_d_p[0]
+#set_property -dict { PACKAGE_PIN P20   IOSTANDARD TMDS_33 } [get_ports { rf_q_n }]; #IO_L14N_T2_SRCC_34 Sch=hdmi_rx_d_n[2]
+#set_property -dict { PACKAGE_PIN N20   IOSTANDARD TMDS_33 } [get_ports { rf_q_p }]; #IO_L14P_T2_SRCC_34 Sch=hdmi_rx_d_p[2]
 
 
 ##HDMI Tx
@@ -208,6 +216,6 @@ set_property -dict { PACKAGE_PIN N20   IOSTANDARD TMDS_33 } [get_ports { rf_q_p 
 
 #set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { crypto_sda }]; #IO_25_35 Sch=crypto_sda
 
-create_clock -add -name nco_clk -period 20.00 -waveform {0 10} [get_ports { pll_in }];
-set_false_path -from [filter [all_registers -clock [get_clocks -of_objects [get_ports nco_clk]]]] -to [get_clocks -of_objects [get_ports clk_fpga_0]] 
-set_false_path -from [filter [all_registers -clock [get_clocks -of_objects [get_ports clk_fpga_0]]]] -to [get_clocks -of_objects [get_ports nco_clk]]
+#create_clock -add -name nco_clk -period 20.00 -waveform {0 10} [get_ports { pll_in }];
+#set_false_path -from [filter [all_registers -clock [get_clocks -of_objects [get_ports nco_clk]]]] -to [get_clocks -of_objects [get_ports clk_fpga_0]] 
+#set_false_path -from [filter [all_registers -clock [get_clocks -of_objects [get_ports clk_fpga_0]]]] -to [get_clocks -of_objects [get_ports nco_clk]]
